@@ -49,10 +49,14 @@ def fourth():
 
 @app.route('/fifth', methods=["post","get"] )
 def fifth():
-    inputFifth = None
+    inputFifth = 'Invalid Input'
     if request.method == "POST":
         if re.search('[0-9]', request.form['input']):
-            inputFifth = (10*float(request.form['input']))**2
+            a,b = request.form['input'].split()
+            a,b = int(a), int(b)
+            while b:
+                a,b = b, a%b
+            inputFifth = a
         else:
             inputFifth = 'Invalid Input'
     return render_template('fifth.html', input=inputFifth)
