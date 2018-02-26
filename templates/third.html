@@ -6,18 +6,24 @@
     <title>Third Question</title>
   </head>
   <body>
-    <form action=""  method="post" id="form">
-      <input type="text" class="" name=input placeholder="Input"/><br><br>
-      <button type="submit" class="">Get Output</button><br>
-    </form>
-    <div class="outputbox">
-      <p style="font-size:25px"><strong>OUTPUT= </strong>{{ input }}</p>
-    </div>
-    <div class="buttons" align="center">
-      <p>
-        <a href="second.html"><img src="..\static\back.png" width="100" height="100"></a>
-        <a href="fourth.html"><img src="..\static\next.png" width="100" height="100"></a>
-      </p>
+    <div class="outer">
+      <div class="middle">
+        <div class="inner">
+          <form action=""  method="post" id="form">
+              <input type="text" class="" name=input placeholder="Input"/><br><br>
+                <button type="submit" class="">Get Output</button><br>
+          </form>
+          <div class="outputbox">
+            <p style="font-size:25px"><strong>OUTPUT= </strong>{{ input }}</p>
+          </div>
+          <div class="buttons" align="center">
+            <p>
+              <a href="second"><img src="..\static\back.png" width="100" height="100"></a>
+              <a href="fourth"><img src="..\static\next.png" width="100" height="100"></a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

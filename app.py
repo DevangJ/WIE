@@ -3,7 +3,7 @@ import re
 app = Flask(__name__)
 
 
-@app.route('/first.html', methods=["post","get"] )
+@app.route('/first', methods=["post","get"] )
 def first():
     inputFirst = None
     if request.method == "POST":
@@ -14,7 +14,7 @@ def first():
     return render_template('first.html', input=inputFirst)
 
 
-@app.route('/second.html', methods=["post","get"] )
+@app.route('/second', methods=["post","get"] )
 def second():
     inputSecond = None
     if request.method == "POST":
@@ -25,7 +25,7 @@ def second():
     return render_template('second.html', input=inputSecond)
 
 
-@app.route('/third.html', methods=["post","get"] )
+@app.route('/third', methods=["post","get"] )
 def third():
     inputThird = None
     if request.method == "POST":
@@ -36,7 +36,7 @@ def third():
     return render_template('third.html', input=inputThird)
 
 
-@app.route('/fourth.html', methods=["post","get"] )
+@app.route('/fourth', methods=["post","get"] )
 def fourth():
     inputFourth = None
     if request.method == "POST":
@@ -47,7 +47,7 @@ def fourth():
     return render_template('fourth.html', input=inputFourth)
 
 
-@app.route('/fifth.html', methods=["post","get"] )
+@app.route('/fifth', methods=["post","get"] )
 def fifth():
     inputFifth = None
     if request.method == "POST":
@@ -58,7 +58,7 @@ def fifth():
     return render_template('fifth.html', input=inputFifth)
 
 
-@app.route('/sixth.html', methods=["post","get"] )
+@app.route('/sixth', methods=["post","get"] )
 def sixth():
     inputSixth = None
     if request.method == "POST":
@@ -69,7 +69,7 @@ def sixth():
     return render_template('sixth.html', input=inputSixth)
 
 
-@app.route('/seventh.html', methods=["post","get"] )
+@app.route('/seventh', methods=["post","get"] )
 def seventh():
     inputSeventh = None
     if request.method == "POST":
