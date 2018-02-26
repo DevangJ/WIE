@@ -1,0 +1,42 @@
+.outputbox
+{
+	text-align: center;
+}
+
+form
+{
+	text-align: center;
+}
+
+.buttons
+{
+	align-content: center;
+}
+
+img
+{
+	opacity: 0.5;
+	filter: 
+}
+
+img:hover
+{
+	opacity: 1;
+	filter: 
+}
+
+body
+{
+	background-image:url(background.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	backface-visibility: 50; 
+}
+
+.bg
+{
+
+	background-color: black
+	opacity: 0.2;
+
+}
