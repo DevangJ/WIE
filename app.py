@@ -67,9 +67,8 @@ def sixth():
     inputSixth = None
     if request.method == "POST":
         if re.search('[0-9]', request.form['input']):
-            x=float(request.form['input'])
             if float(request.form['input'])==0:
-                inputSixth= 'Invalid Input'
+                inputSixth= 'Invalid Input for this question'
             elif float(request.form['input'])==1:
                 inputSixth=0
             elif float(request.form['input'])==2:
@@ -96,10 +95,30 @@ def seventh():
     inputSeventh = None
     if request.method == "POST":
         if re.search('[0-9]', request.form['input']):
-            inputSeventh = float(request.form['input'])**2
+            l=list(map(int,request.form['input'].split()))
+            if (l[0]+l[1])>l[2] and (l[1]+l[2])>l[0] and (l[0]+l[2])>l[1]:
+                s=(l[0]+l[1]+l[2])/2
+                inputSeventh=(s*(s-l[0])*(s-l[1])*(s-l[2]))**0.5
+            else:
+                inputSeventh='Invalid Input for this question'
         else:
             inputSeventh = 'Invalid Input'
     return render_template('seventh', input=inputSeventh)
+
+@app.route('/', methods=["post","get"] )
+def opening():
+    return render_template('opening')
+
+
+@app.route('/actualend', methods=["post","get"] )
+def actualend():
+    return render_template('actualend')
+
+
+@app.route('/end', methods=["post","get"] )
+def end():
+    return render_template('end')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000, debug=True, threaded=True)

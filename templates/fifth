@@ -9,10 +9,10 @@
     <div class="outer">
       <div class="middle">
         <div class="inner">
-          <p align="center"><font color="White">Input 2 numbers seperated by a space</font></p>
+          <p align="center"><font color="White" size="5" face="Segoe UI">Input 2 numbers seperated by a space</font></p>
           <form action=""  method="post" id="form">
             <input type="text" class="" name=input placeholder="Input" style="width: 100px; text-align: center;"><br>
-            <button type="submit" class="">Get Output</button><br>
+            <button type="submit" class="button">Get Output</button><br>
           </form>
           <div class="outputbox">
             <p style="font-size:25px"><font color="White" face="Segoe UI"><strong>OUTPUT= </strong>{{ input }}</p></font>
