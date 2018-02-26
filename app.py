@@ -49,18 +49,14 @@ def fourth():
 
 @app.route('/fifth', methods=["post","get"] )
 def fifth():
-    inputFifth = None
+    inputFifth = 'Invalid Input'
     if request.method == "POST":
-        if re.search('[0-9]', request.form['input1'], request.form['input2']):
-            x=request.form['input1']
-            y=request.form['input2']
-            if x>y:
-                small=y
-            else:
-                small=x
-            for i in range(1,small+1):
-                if (x%i==0) and (y%i==0):
-                    inputFifth=i
+        if re.search('[0-9]', request.form['input']):
+            a,b = request.form['input'].split()
+            a,b = int(a), int(b)
+            while b:
+                a,b = b, a%b
+            inputFifth = a
         else:
             inputFifth = 'Invalid Input'
     return render_template('fifth', input=inputFifth)
@@ -71,7 +67,25 @@ def sixth():
     inputSixth = None
     if request.method == "POST":
         if re.search('[0-9]', request.form['input']):
-            inputSixth = float(request.form['input'])**2
+            x=float(request.form['input'])
+            if float(request.form['input'])==0:
+                inputSixth= 'Invalid Input'
+            elif float(request.form['input'])==1:
+                inputSixth=0
+            elif float(request.form['input'])==2:
+                inputSixth=1
+            elif float(request.form['input'])==3:
+                inputSixth=1
+            else:
+                t1=0
+                t2=1
+                count=2
+                while count<float(request.form['input']):
+                    t3=t1+t2
+                    t1=t2
+                    t2=t3
+                    count+=1
+                inputSixth=t3
         else:
             inputSixth = 'Invalid Input'
     return render_template('sixth', input=inputSixth)

@@ -9,9 +9,9 @@
     <div class="outer">
       <div class="middle">
         <div class="inner">
+          <p align="center"><font color="White">Input 2 numbers seperated by a space</font></p>
           <form action=""  method="post" id="form">
-            <input type="text" class="" name=input1 placeholder="Input 1" style="width: 100px; text-align: center;"><br><br>
-            <input type="text" class="" name=input2 placeholder="Input 2" style="width: 100px; text-align: center;"><br><br>
+            <input type="text" class="" name=input placeholder="Input" style="width: 100px; text-align: center;"><br>
             <button type="submit" class="">Get Output</button><br>
           </form>
           <div class="outputbox">
