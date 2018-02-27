@@ -9,8 +9,9 @@
     <div class="outer">
       <div class="middle">
         <div class="inner">
+          <p align="center"><font face="Segoe UI" color="White"><2></font></p>
           <form action=""  method="post" id="form">
-            <input type="text" class="" name=input placeholder="Input" style="width: 100px; text-align: center;"><br>
+            <input type="text" class="textb" name=input placeholder="Input"><br>
             <button type="submit" class="button">Get Output</button><br>
           </form>
           <div class="outputbox">

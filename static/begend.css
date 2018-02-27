@@ -14,7 +14,7 @@
 
 .button 
 {
-    background-color: #4CAF50;
+    background-color: #55a5ff;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -22,7 +22,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    opacity: 0.5
+    opacity: 0.8;
 }
 
 .button:hover

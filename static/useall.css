@@ -67,7 +67,7 @@ body
 
 .button 
 {
-    background-color: #4CAF50;
+    background-color: #55a5ff;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -75,10 +75,21 @@ body
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    opacity: 0.5
+    opacity: 0.8;
 }
 
 .button:hover
 {
 	opacity: 1;
+}
+
+.textb
+{
+	padding: 100;
+	width: 150px; 
+	height: 25px;
+	text-align: center;
+	border: 3px solid #55a5ff;
+	font-size: 20px;
+	color: #0a60bb;
 }

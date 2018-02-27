@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Welcome</title>
-	<link rel="stylesheet" href="..\static\begend.css">
+    <link rel="stylesheet" href="..\static\begend.css">
 </head>
 <body >
 	<div class="outer">
@@ -16,11 +16,11 @@
         		an output will be produced on clicking "Get Output."<br>
         		Your objective is to figure out the logic of the program<br>
         		and code it in a language of your choice on any IDE.<br>
-        		Each question has 1 input unless specified otherwise.<br>
+        		Each question has 1 integer input unless specified otherwise.<br>
         		Click "Begin Coding" when asked to<br><br>
         	</font>
         	<form action="first">
-        		<button type="submit" class="button">Begin Coding</button>>
+        		<button type="submit" class="button">Begin Coding</button>
         </div>
       </div>
     </div>
