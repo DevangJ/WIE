@@ -8,7 +8,7 @@ def first():
     inputFirst = None
     if request.method == "POST":
         if re.search('[0-9]', request.form['input']):
-            if(int(request.form['input'])>0):
+            if(int(request.form['input'])>=0):
                 fact=1
                 for i in range(1,(int(request.form['input']))+1):
                     fact*=i
@@ -33,7 +33,6 @@ def second():
             inputSecond = 'Invalid Input'
     return render_template('second', input=inputSecond)
 
-
 @app.route('/third', methods=["post","get"] )
 def third():
     inputThird = None
@@ -42,7 +41,7 @@ def third():
             inputThird = (inp[::2]+inp[1::2])
     return render_template('third', input=inputThird)
 
-
+    
 @app.route('/fourth', methods=["post","get"] )
 def fourth():
     inputFourth = 'Invalid Input'
@@ -91,12 +90,7 @@ def sixth():
     inputSixth = None
     if request.method == "POST":
         if re.search('[0-9]', request.form['input']):
-            l=list(map(int,request.form['input'].split()))
-            if (l[0]+l[1])>l[2] and (l[1]+l[2])>l[0] and (l[0]+l[2])>l[1]:
-                s=(l[0]+l[1]+l[2])/2
-                inputSixth=(s*(s-l[0])*(s-l[1])*(s-l[2]))**0.5
-            else:
-                inputSixth='Invalid Input for this question'
+            inputSixth=float(request.form['input'])-(10*((float(request.form['input']))**0.5))
         else:
             inputSixth = 'Invalid Input'
     return render_template('sixth', input=inputSixth)
@@ -131,6 +125,7 @@ def eighth():
                     val=val%122+96
                 inputEighth = inputEighth+chr(val)
     return render_template('eighth', input=inputEighth)
+
 
 @app.route('/', methods=["post","get"] )
 def opening():

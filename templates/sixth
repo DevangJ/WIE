@@ -10,7 +10,6 @@
       <div class="middle">
         <div class="inner">
           <p align="center"><font face="Segoe UI" color="White"><6></font></p>
-          <p align="center"><font color="White" size="5" face="Segoe UI">Input 3 numbers seperated by a space</font></p>
           <form action=""  method="post" id="form">
             <input type="text" class="textb" name=input placeholder="Input"><br>
             <button type="submit" class="button">Get Output</button><br>

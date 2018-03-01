@@ -20,7 +20,8 @@
           </div>
           <div class="buttons" align="center">
             <p>
-              <a href="second"><img src="..\static\nextfinal.png" width="100" height="100"></a>
+              <a href="seventh"><img src="..\static\backfinal.png" width="100" height="100"></a>
+              <a href="end"><img src="..\static\nextfinal.png" width="100" height="100"></a>
             </p>
           </div>
         </div>
